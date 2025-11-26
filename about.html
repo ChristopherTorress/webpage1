@@ -1,0 +1,124 @@
+<!-- DEVELOPER: Christopher Torres, IS117-xxx, Fall 2025 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torres Auto - About Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Custom CSS (in case of additional styling, linking here) -->
+    <link href="css/styles.css" rel="stylesheet">
+    <style>
+        /* Shared styles for all Interior Pages */
+        .interior-header {
+            background-color: #f8f9fa;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .card {
+            border-radius: 0.75rem;
+        }
+        .navbar-brand { font-weight: 700; }
+    </style>
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="index.html">TORRES AUTO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                        </li>
+                        <!-- 2-Tier Navigation Dropdown (required) -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="inventoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Vehicles
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="inventoryDropdown">
+                                <li><a class="dropdown-item" href="inventory.html">Current Inventory</a></li>
+                                <!-- Child page for 2-tier nav -->
+                                <li><a class="dropdown-item" href="car_detail.html">Featured Vehicle Detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content for About Us Page -->
+    <main class="container my-5">
+
+        <!-- Interior Page Header -->
+        <header class="interior-header rounded-3 shadow-sm">
+            <h1 class="text-center">Our Commitment to Quality</h1>
+            <p class="text-center lead">Torres Auto has been serving the community for over 20 years.</p>
+        </header>
+
+        <!-- Content Row with Aside/Section -->
+        <div class="row g-4">
+            
+            <!-- Main Section (8/12 columns on medium screens and up) -->
+            <section class="col-md-8">
+                <h2 class="mb-3 text-primary">Our Mission</h2>
+                <p>At Torres Auto, our mission is simple: to provide the highest quality vehicles and exceptional customer service. We believe that buying a car should be an exciting and transparent process, free from stress and pressure. Every vehicle on our lot is thoroughly inspected and certified to meet the highest standards of safety and reliability.</p>
+                
+                <h2 class="mt-4 mb-3 text-primary">The Torres Auto Difference</h2>
+                <p>We pride ourselves on our diverse inventory, catering to every budget and need—from reliable first cars to top-of-the-line luxury SUVs. Our team of experienced staff is dedicated to helping you find the perfect match, offering personalized advice rather than sales pitches. Stop by our location today to experience the difference!</p>
+            </section>
+
+            <!-- Aside (4/12 columns on medium screens and up, floats right) -->
+            <aside class="col-md-4">
+                <!-- Bootstrap Card for Key Info (Mandatory Card Use) -->
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white fw-bold">
+                        Quick Facts
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Years in Service: **20+**</li>
+                        <li class="list-group-item">Inventory Size: **300+ Vehicles**</li>
+                        <li class="list-group-item">Financing Options: **Available**</li>
+                        <li class="list-group-item">Contact Us: **<a href="contact.html">Get in Touch</a>**</li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p>&copy; 2025 Torres Auto | Developer: Christopher Torres, IS117-xxx</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white text-decoration-none me-3">Terms of Service</a>
+                    <a href="#" class="text-white text-decoration-none">Privacy Statement</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
